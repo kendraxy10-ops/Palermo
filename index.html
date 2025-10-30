@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enhanced Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            width: 320px;
+            text-align: center;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #667eea;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .name {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #333;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 16px;
+            color: #667eea;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .bio {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #667eea;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #764ba2;
+        }
+        .contact {
+            font-size: 12px;
+            color: #999;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/120" alt="Profile Photo" class="profile-photo">
+        <h2 class="name">John Doe</h2>
+        <p class="title">Web Developer</p>
+        <p class="bio">A passionate web developer with a love for creating interactive experiences. Always learning new technologies and building innovative solutions.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="contact">Email: john.doe@example.com<br>Phone: (123) 456-7890</p>
+    </div>
 </body>
 </html>
